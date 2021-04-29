@@ -10,10 +10,10 @@ src/.bundle
 # Ignore all logfiles and tempfiles.
 src/log/*
 src/tmp/*
-!src/log/.keep
-!src/tmp/pids/*
-!src/tmp/pids/
-!src/tmp/pids/.keep
+src/log/.keep
+src/tmp/pids/*
+src/tmp/pids/
+src/tmp/pids/.keep
 
 # Ignore uploaded files in development.
 src/storage/*
