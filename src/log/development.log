@@ -43,3 +43,35 @@ Entrypoint application = js/application-f826770d917d8a37c1d8.js js/application-f
 Completed 200 OK in 16505ms (Views: 16478.4ms | ActiveRecord: 0.0ms | Allocations: 18085)
 
 
+Started GET "/" for 172.23.0.1 at 2021-04-25 09:55:48 +0000
+Started GET "/" for 172.23.0.1 at 2021-04-25 09:55:48 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 217)
+  Rendered users/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 161)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 259.1ms | Allocations: 10674)
+  Rendered layout layouts/application.html.erb (Duration: 260.3ms | Allocations: 10792)
+Completed 200 OK in 322ms (Views: 272.0ms | ActiveRecord: 0.0ms | Allocations: 14063)
+
+
+Completed 200 OK in 312ms (Views: 280.9ms | ActiveRecord: 0.0ms | Allocations: 13383)
+
+
+  [1m[35m (38.7ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[35m (32.8ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT GET_LOCK('5277929974492897470', 0)[0m
+  [1m[35m (12.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (3.4ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2021-04-25 09:56:44.064785', '2021-04-25 09:56:44.064785')[0m
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT RELEASE_LOCK('5277929974492897470')[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
